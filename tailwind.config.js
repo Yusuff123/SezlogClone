@@ -1,8 +1,12 @@
 module.exports = {
   content: ["./**/*.html"],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'fontTT' : ['Roboto', 'sans-serif']
+      }
+    },
   },
   variants: {
     extend: {},

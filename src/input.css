@@ -1,3 +1,170 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+    * {
+        @apply font-fontTT
+    }
+
+    .header {
+        @apply bg-[#163565] flex flex-row justify-between w-full h-44 align-middle
+    }
+
+    .header div {
+        @apply mx-10
+    }
+
+    .header div img {
+        @apply my-10
+    }
+
+    .header div ul {
+        @apply my-20
+    }
+
+    .header div ul li {
+        @apply inline text-base text-white
+    }
+
+    .header div ul li a {
+        @apply mx-3 my-10 font-bold
+    }
+
+    .header div ul li a:hover {
+        @apply text-slate-400 transition-colors
+    }
+
+    @media screen and (max-width: 760px) {
+        .header {
+            @apply flex flex-col w-full justify-center h-auto
+        }
+
+        .header div img {
+            @apply w-full h-auto
+        }
+        
+        .header div ul li{
+            @apply block text-center p-1 text-sm my-0
+        }
+    }
+
+    .main {
+        @apply flex flex-row justify-center mt-28
+    }
+
+    .main div {
+        @apply w-[40%] m-8
+    }
+
+    .main div h1 {
+        @apply text-3xl text-left font-bold
+    }
+
+    .main div p {
+        @apply text-base
+    }
+
+    .main div h1 span {
+        @apply text-[#163565] font-bold
+    }
+    
+    .services {
+        @apply flex flex-row justify-center mt-72
+    }
+
+    .services div {
+        @apply w-[25%] mx-10 rounded-lg
+    }
+
+    .services div a {
+        @apply hidden
+    }
+
+    .services div:hover a {
+        @apply block -translate-y-36 text-3xl text-center text-black transition-transform font-fontTT
+    }
+
+    .services div:hover img {
+        @apply opacity-5 transition-opacity cursor-pointer ease-in
+    }
+
+    .referanslar {
+        @apply flex justify-center flex-col mt-96
+    }
+
+    .referanslar div {
+        @apply my-10
+    }
+
+    .referanslar div p{
+        @apply text-center text-3xl
+    }
+
+    .referanslarImages {
+        @apply flex justify-center flex-wrap
+    }
+   
+    .referanslarImages div {
+        @apply w-[15%]
+    }
+
+    .referanslar div img {
+        @apply fill-inherit ease-out duration-150
+    }
+
+    .referanslar div img:hover {
+        @apply scale-125 transition-all ease-in duration-300
+    }
+
+
+    .footer {
+        @apply flex flex-col w-full h-auto p-12 bg-[#163565] mt-40
+    }
+
+    .footer-top {
+        @apply flex flex-row justify-between
+    }
+
+    .footer-top div {
+        @apply mx-32
+    }
+
+    .footer div a {
+        @apply text-white 
+    }
+
+    .footer div p {
+        @apply text-white 
+    }
+
+    .footer div .access {
+        @apply text-3xl 
+    }
+
+    .footer div a svg {
+        @apply ease-out duration-150
+    }
+
+    .footer div a svg:hover {
+        @apply scale-125 transition-all ease-in duration-300
+    }
+
+    .dorts {
+        @apply flex flex-col justify-center
+    }
+
+    .dorts div p {
+        @apply text-center
+    }
+
+    .dorts div span {
+        @apply text-center
+    }
+
+    .dorts div p span {
+        @apply font-bold
+    }
+
+}
